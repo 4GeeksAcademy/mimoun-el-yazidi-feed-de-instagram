@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instragram Photo Feed Bootrstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .nav-pill .nav-link{
+            color: grey;
+        }
+        .nav-pill .nav-link.active{
+            color: green;
+        }
+    </style>
+    <nav class="navbar navbar-light bg-light py-3">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between" style="align-items: center; justify-content: center;">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <i class="fa-brands fa-instagram fa-xl" style="margin-right: 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg></i>
+                    <h5 class="d-inline-block fs-5" style="margin: 0;">Instagram</h5>
+                </div>
+                <div class="d-flex align-right justify-content-end">
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                              </svg>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Caption:</h6>
+                    <textarea class="form-control" placeholder="Add the caption of your post here"
+                        id="floatingTextarea2"></textarea>
+                    <div class="row p-2">
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-2">
+        <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true"><i
+                        class="fa-solid fa-table-cells"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5zM1.5 1a.5.5 0 0 0-.5.5V5h4V1zM5 6H1v4h4zm1 4h4V6H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5zm1 0v4h4v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11zm0-1h4V6h-4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11zm-1 0V1H6v4z"/>
+                          </svg>
+                    </a>
+                        
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"/>
+                      </svg>
+                </a>
+                    
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://www.ecuestre.es/contenidos/imagenes/articulo/658fe0de8e5ff048c1c367a7/1703928149026-consulta-juridica-superficie-minima-para-albergar-dos-caballos.jpg" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://mx.hola.com/imagenes/estar-bien/20200525168642/razas-perro-border-collie/0-827-353/border-collie-m.jpg" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="data:image/jpeg;base64,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" class="img-fluid w-100" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://content.nationalgeographic.com.es/medio/2021/10/26/vaca-de-la-raza-holstein_dc320ada_1280x1280.jpg" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://gestionagroganadera.com/wp-content/uploads/2021/02/ovejas-campo.jpg" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://images.ctfassets.net/j4m9q0fykyy4/Wk4DWubWl9Co81LVJko76/1230a7ab66d6c3724aa0624e8985409e/2021-05-gallinas-libertad.jpg" class="img-fluid w-100" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://parquedecabarceno.com/wp-content/uploads/2023/02/img3-avestruz.webp" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://hora12.cl/wp-content/uploads/2024/07/los_cerdos_.jpg" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://cdn.ehorses.media/image/blur/eyecatcher/caballo-cuarto-de-milla-yegua-2anos-153-cm-castano-western-horses-la-monta-western-working-equitation-horses-reining-muenchen_ce505ccc-ced3-4df8-bd15-a4bae166dab2.jpg" class="img-fluid w-100" alt=""></div>
+                </div>
+            </div>
+            <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            </div>
+            <div class="row my-4">
+                <div class="col-6 mx-auto border rounded p-0">
+                    <div class="d-flex p-2">
+                        <div class="w-100 fs-4">My favourite hobby.</div>
+                        <small>04/09</small>
+                    </div>
+                    <img style="object-fit: cover;" src="https://www.farnam.com/-/media/project/oneweb/farnam/images/stable-talk/kevin-oliver/kevin_oliver_2016_800p.jpg" class="img-fluid w-100 col-12" alt=""/>
+                    <div class="p-2">
+                        <strong>101k Likes</strong>
+                        <P>I love riding my horse.</P>
+                    </div>
+                </div>
+            </div>
+            
+         </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>
